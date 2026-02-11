@@ -1,111 +1,111 @@
 /**
- * Product database — static catalog data
- * Images follow the path: assets/products/nombre-archivo.webp
+ * Product database — Mielitas VIP catalog
+ * Images from: recursos/
  */
 
 export const products = [
   {
     id: 1,
-    name: "Audífonos Inalámbricos Pro",
-    price: 249.99,
-    category: "audio",
-    description: "Cancelación de ruido activa, 30 h de batería y sonido espacial envolvente.",
-    image: "assets/products/audifonos-pro.webp"
+    name: "Mielitas VIP",
+    price: 150.00,
+    category: "mielitas",
+    description: "Royal Honey 100% natural. Siente el poder de la miel desde la primera toma. Sin efectos secundarios, sabor dulce y 100% efectivo.",
+    image: "recursos/FB_IMG_1770791679655.jpg"
   },
   {
     id: 2,
-    name: "Smartwatch Ultra",
-    price: 399.99,
-    category: "wearables",
-    description: "Pantalla AMOLED, GPS de doble frecuencia y monitoreo avanzado de salud.",
-    image: "assets/products/smartwatch-ultra.webp"
+    name: "Mielitas VIP+",
+    price: 200.00,
+    category: "mielitas",
+    description: "Versión potenciada. Más potencia, rendimiento extra. Royal Honey, más potente y sin efectos secundarios.",
+    image: "recursos/FB_IMG_1770791532533.jpg"
   },
   {
     id: 3,
-    name: "Teclado Mecánico RGB",
-    price: 179.99,
-    category: "accesorios",
-    description: "Switches ópticos, retroiluminación personalizable y diseño ergonómico.",
-    image: "assets/products/teclado-mecanico.webp"
+    name: "Mielitas VIP — Energía Natural",
+    price: 150.00,
+    category: "mielitas",
+    description: "No dejes que el estrés apague tu fuego. Producto natural, 100% efectivo, sabor dulce. Reactiva tu instinto natural con Mielitas VIP.",
+    image: "recursos/FB_IMG_1770791691425.jpg"
   },
   {
     id: 4,
-    name: "Cámara Mirrorless 4K",
-    price: 1299.99,
-    category: "fotografía",
-    description: "Sensor full-frame de 45 MP, grabación 4K a 120 fps y estabilización en 5 ejes.",
-    image: "assets/products/camara-mirrorless.webp"
+    name: "Mielitas VIP — Noche Inolvidable",
+    price: 150.00,
+    category: "mielitas",
+    description: "¿Cena romántica o noche inolvidable? Asegura el éxito con la energía de Mielitas VIP. 100% natural.",
+    image: "recursos/FB_IMG_1770791705727.jpg"
   },
   {
     id: 5,
-    name: "Monitor Curvo 34\"",
-    price: 599.99,
-    category: "accesorios",
-    description: "Panel IPS ultrawide QHD, 165 Hz y HDR 400 para productividad y gaming.",
-    image: "assets/products/monitor-curvo.webp"
+    name: "Mielitas VIP — Colección Completa",
+    price: 350.00,
+    category: "paquetes",
+    description: "Conoce nuestras mielitas: VIP y VIP+. Sin efectos secundarios, sabor dulce, 100% efectivo y natural.",
+    image: "recursos/FB_IMG_1770791753995.jpg"
   },
   {
     id: 6,
-    name: "Bocina Portátil 360°",
-    price: 129.99,
-    category: "audio",
-    description: "Sonido omnidireccional, resistencia IP67 y 20 h de reproducción continua.",
-    image: "assets/products/bocina-portatil.webp"
+    name: "Miel Mágica — Para Ella",
+    price: 180.00,
+    category: "para-ella",
+    description: "Beneficios en mujeres: aumenta el deseo, mayor sensibilidad, más lubricación natural. Hasta 72 horas de efecto. Venta al detalle y mayoreo.",
+    image: "recursos/IMG-20260207-WA0002.jpg"
   },
   {
     id: 7,
-    name: "Drone Explorer X",
-    price: 899.99,
-    category: "fotografía",
-    description: "Cámara 4K con gimbal de 3 ejes, 40 min de vuelo y detección de obstáculos.",
-    image: "assets/products/drone-explorer.webp"
+    name: "Royal Honey VIP — Dietary Supplement",
+    price: 200.00,
+    category: "mielitas",
+    description: "Dietary Supplement de máxima potencia. Sensations and Desire. Producto premium importado.",
+    image: "recursos/3_26ae9733-e320-47fb-9adc-fbc01bc16eae.png"
   },
   {
     id: 8,
-    name: "Pulsera Fitness Band",
-    price: 79.99,
-    category: "wearables",
-    description: "Monitor de ritmo cardíaco, SpO2 y seguimiento de sueño con 14 días de batería.",
-    image: "assets/products/pulsera-fitness.webp"
+    name: "Mielitas VIP — Beneficios",
+    price: 150.00,
+    category: "informacion",
+    description: "Eleva los niveles de testosterona, mayor rendimiento y resistencia, erecciones más firmes, reducción del estrés y la fatiga. Sin efectos secundarios.",
+    image: "recursos/FB_IMG_1770791759245.jpg"
   },
   {
     id: 9,
-    name: "Cargador MagSafe Duo",
-    price: 59.99,
-    category: "accesorios",
-    description: "Carga inalámbrica rápida de 15 W para smartphone y smartwatch simultáneamente.",
-    image: "assets/products/cargador-magsafe.webp"
+    name: "Royal Honey VIP — Premium",
+    price: 220.00,
+    category: "mielitas",
+    description: "Maximum Arousal. Dietary Supplement premium de la más alta calidad. Producto importado original.",
+    image: "recursos/FB_IMG_1770792118412.jpg"
   },
   {
     id: 10,
-    name: "Micrófono Condensador USB",
-    price: 149.99,
-    category: "audio",
-    description: "Patrón cardioide, resolución de 24 bit/96 kHz y control de ganancia integrado.",
-    image: "assets/products/microfono-condensador.webp"
+    name: "Mielitas VIP — Modo de Uso",
+    price: 150.00,
+    category: "informacion",
+    description: "Consumir 2-3 horas antes. Una bolsita completa, directamente o disuelta en bebida. Beber bastante agua. Frecuencia recomendada: cada 2-3 días.",
+    image: "recursos/FB_IMG_1770791794467.jpg"
   },
   {
     id: 11,
-    name: "Lente 50 mm f/1.4",
-    price: 449.99,
-    category: "fotografía",
-    description: "Apertura luminosa, bokeh cremoso y enfoque automático silencioso para retratos.",
-    image: "assets/products/lente-50mm.webp"
+    name: "Mielitas VIP — Producto Estrella",
+    price: 150.00,
+    category: "mielitas",
+    description: "Aumenta el deseo sexual, fortalece y prolonga la erección, eleva los niveles de testosterona. 100% orgánico con ingredientes naturales. Cero contraindicaciones.",
+    image: "recursos/FB_IMG_1770791698644.jpg"
   },
   {
     id: 12,
-    name: "Smart Ring Titanio",
-    price: 299.99,
-    category: "wearables",
-    description: "Seguimiento de actividad y sueño en un anillo ligero de titanio grado 5.",
-    image: "assets/products/smart-ring.webp"
+    name: "Distribuidora Royal Honey VIP",
+    price: 150.00,
+    category: "mielitas",
+    description: "Distribuidora Original Royal Honey VIP. Producto auténtico y certificado. Envíos a nivel nacional, pagas al recibir.",
+    image: "recursos/FB_IMG_1769802488790.jpg"
   }
 ];
 
 export const categories = [
   { id: "todos", label: "Todos" },
-  { id: "audio", label: "Audio" },
-  { id: "wearables", label: "Wearables" },
-  { id: "accesorios", label: "Accesorios" },
-  { id: "fotografía", label: "Fotografía" }
+  { id: "mielitas", label: "Mielitas" },
+  { id: "para-ella", label: "Para Ella" },
+  { id: "paquetes", label: "Paquetes" },
+  { id: "informacion", label: "Información" }
 ];
