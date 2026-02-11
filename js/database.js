@@ -6,99 +6,91 @@
 export const products = [
   {
     id: 1,
-    name: "Mielitas VIP",
+    name: "Mielitas VIP — Máxima Potencia",
     price: 150.00,
     category: "mielitas",
-    description: "Royal Honey 100% natural. Siente el poder de la miel desde la primera toma. Sin efectos secundarios, sabor dulce y 100% efectivo.",
-    image: "recursos/FB_IMG_1770791679655.jpg"
+    description: "Diseñadas para quienes buscan un efecto mucho más fuerte e intenso. Fórmula exclusiva con ingredientes naturales de alta potencia. Eleva el deseo, la energía y la resistencia al máximo nivel. 🔥 Presentación de 20g por sobre.",
+    image: "recursos para la pagina/producto1.jpg"
   },
   {
     id: 2,
-    name: "Mielitas VIP+",
-    price: 200.00,
-    category: "mielitas",
-    description: "Versión potenciada. Más potencia, rendimiento extra. Royal Honey, más potente y sin efectos secundarios.",
-    image: "recursos/FB_IMG_1770791532533.jpg"
+    name: "Pink Pussy Cat — Miel Afrodisíaca Femenina",
+    price: 180.00,
+    category: "para-ella",
+    description: "Miel afrodisíaca especialmente formulada para mujeres. Estimula el deseo y la pasión femenina, aumenta la energía y vitalidad, intensifica la sensibilidad y el placer. Ingredientes naturales y de acción rápida. 💗✨",
+    image: "recursos para la pagina/product2.png"
   },
   {
     id: 3,
     name: "Mielitas VIP — Energía Natural",
     price: 150.00,
     category: "mielitas",
-    description: "No dejes que el estrés apague tu fuego. Producto natural, 100% efectivo, sabor dulce. Reactiva tu instinto natural con Mielitas VIP.",
-    image: "recursos/FB_IMG_1770791691425.jpg"
+    description: "No dejes que el estrés apague tu fuego. Efecto más fuerte, intenso y prolongado. Aumenta la energía y el rendimiento. Estimula el deseo de manera inmediata. 100% natural.",
+    image: "recursos para la pagina/publicidad_producto1.jpg"
   },
   {
     id: 4,
-    name: "Mielitas VIP — Noche Inolvidable",
-    price: 150.00,
-    category: "mielitas",
-    description: "¿Cena romántica o noche inolvidable? Asegura el éxito con la energía de Mielitas VIP. 100% natural.",
-    image: "recursos/FB_IMG_1770791705727.jpg"
+    name: "Pink Pussy Cat — Sensualidad Natural",
+    price: 180.00,
+    category: "para-ella",
+    description: "Despierta tu lado más atrevido y sensual. Aumenta la energía y vitalidad, intensifica la sensibilidad y el placer. Elaborada con ingredientes naturales. ¡Atrévete a probarla! 🌸",
+    image: "recursos para la pagina/publicidad_producto2.jpg"
   },
   {
     id: 5,
     name: "Mielitas VIP — Colección Completa",
     price: 350.00,
     category: "paquetes",
-    description: "Conoce nuestras mielitas: VIP y VIP+. Sin efectos secundarios, sabor dulce, 100% efectivo y natural.",
-    image: "recursos/FB_IMG_1770791753995.jpg"
+    description: "Conoce nuestras mielitas: VIP y Pink Pussy Cat. Sin efectos secundarios, sabor dulce, 100% efectivo y natural. Paquete ideal para parejas.",
+    image: "recursos para la pagina/publicidad_producto_2.jpg"
   },
   {
     id: 6,
-    name: "Miel Mágica — Para Ella",
-    price: 180.00,
-    category: "para-ella",
-    description: "Beneficios en mujeres: aumenta el deseo, mayor sensibilidad, más lubricación natural. Hasta 72 horas de efecto. Venta al detalle y mayoreo.",
-    image: "recursos/IMG-20260207-WA0002.jpg"
-  },
-  {
-    id: 7,
-    name: "Royal Honey VIP — Dietary Supplement",
-    price: 200.00,
-    category: "mielitas",
-    description: "Dietary Supplement de máxima potencia. Sensations and Desire. Producto premium importado.",
-    image: "recursos/3_26ae9733-e320-47fb-9adc-fbc01bc16eae.png"
-  },
-  {
-    id: 8,
     name: "Mielitas VIP — Beneficios",
     price: 150.00,
     category: "informacion",
-    description: "Eleva los niveles de testosterona, mayor rendimiento y resistencia, erecciones más firmes, reducción del estrés y la fatiga. Sin efectos secundarios.",
-    image: "recursos/FB_IMG_1770791759245.jpg"
+    description: "Eleva los niveles de testosterona, mayor rendimiento y resistencia, erecciones más firmes, reducción del estrés y la fatiga. Sin efectos secundarios. Potencia la experiencia íntima sin límites.",
+    image: "recursos para la pagina/beneficios_de_uar_el_producto.jpg"
   },
   {
-    id: 9,
-    name: "Royal Honey VIP — Premium",
-    price: 220.00,
-    category: "mielitas",
-    description: "Maximum Arousal. Dietary Supplement premium de la más alta calidad. Producto importado original.",
-    image: "recursos/FB_IMG_1770792118412.jpg"
-  },
-  {
-    id: 10,
+    id: 7,
     name: "Mielitas VIP — Modo de Uso",
     price: 150.00,
     category: "informacion",
     description: "Consumir 2-3 horas antes. Una bolsita completa, directamente o disuelta en bebida. Beber bastante agua. Frecuencia recomendada: cada 2-3 días.",
-    image: "recursos/FB_IMG_1770791794467.jpg"
+    image: "recursos para la pagina/publicidad_como_se_usa.jpg"
+  },
+  {
+    id: 8,
+    name: "Mielitas VIP — Efectos al Usarse",
+    price: 150.00,
+    category: "informacion",
+    description: "Descubre los efectos al usar Mielitas VIP: aumento del deseo, mayor resistencia, experiencia más intensa. Efecto prolongado que dura más tiempo.",
+    image: "recursos para la pagina/publicidad_efectos_al_usarse.jpg"
+  },
+  {
+    id: 9,
+    name: "Mielitas VIP — Efectos del Producto",
+    price: 150.00,
+    category: "informacion",
+    description: "Efecto más fuerte, intenso y prolongado. Aumenta la energía y el rendimiento. Estimula el deseo de manera inmediata. Potencia la experiencia íntima para disfrutar sin límites.",
+    image: "recursos para la pagina/publicidad_efectos_del_producto.jpg"
+  },
+  {
+    id: 10,
+    name: "Mielitas VIP — Tipos de Producto",
+    price: 150.00,
+    category: "informacion",
+    description: "Conoce nuestra línea completa: Mielitas VIP para él y Pink Pussy Cat para ella. Productos premium con ingredientes naturales de alta potencia.",
+    image: "recursos para la pagina/publicidad_tipo_de_producto.jpg"
   },
   {
     id: 11,
-    name: "Mielitas VIP — Producto Estrella",
+    name: "Mielitas VIP — Envíos",
     price: 150.00,
-    category: "mielitas",
-    description: "Aumenta el deseo sexual, fortalece y prolonga la erección, eleva los niveles de testosterona. 100% orgánico con ingredientes naturales. Cero contraindicaciones.",
-    image: "recursos/FB_IMG_1770791698644.jpg"
-  },
-  {
-    id: 12,
-    name: "Distribuidora Royal Honey VIP",
-    price: 150.00,
-    category: "mielitas",
-    description: "Distribuidora Original Royal Honey VIP. Producto auténtico y certificado. Envíos a nivel nacional, pagas al recibir.",
-    image: "recursos/FB_IMG_1769802488790.jpg"
+    category: "informacion",
+    description: "Envíos a nivel nacional. Pago contra entrega disponible. Empaque discreto. Tu pedido llega directamente a tu puerta de forma segura y confidencial.",
+    image: "recursos para la pagina/tipo_de_envio.jpg"
   }
 ];
 

@@ -66,7 +66,7 @@ function renderProducts() {
           <h3 class="product-name">${p.name}</h3>
           <p class="product-price">$${p.price.toFixed(2)}</p>
           <p class="product-desc">${p.description}</p>
-          <a href="https://wa.me/?text=${encodeURIComponent("Hola, me interesa: " + p.name + " ($" + p.price.toFixed(2) + ")")}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Consultar disponibilidad</a>
+          <a href="https://wa.me/50247126194?text=${encodeURIComponent("Hola, me interesa: " + p.name + " ($" + p.price.toFixed(2) + ")")}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Consultar disponibilidad</a>
         </div>
       </article>`
     )
