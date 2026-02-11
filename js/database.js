@@ -18,7 +18,7 @@ export const products = [
     price: 180.00,
     category: "para-ella",
     description: "Miel afrodisíaca especialmente formulada para mujeres. Estimula el deseo y la pasión femenina, aumenta la energía y vitalidad, intensifica la sensibilidad y el placer. Ingredientes naturales y de acción rápida. 💗✨",
-    image: "recursos para la pagina/product2.png"
+    image: "recursos para la pagina/producto2.png"
   },
   {
     id: 3,
