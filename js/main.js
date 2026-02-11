@@ -19,6 +19,14 @@ let searchQuery    = "";
 /* ── Helpers ────────────────────────────────────────────────────── */
 const normalise = (str) => str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
+function fallbackSrc(name) {
+  return "data:image/svg+xml," +
+    "<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22>" +
+    "<rect width=%22400%22 height=%22300%22 fill=%22%23f0f0f0%22/>" +
+    "<text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 " +
+    "fill=%22%23999%22 font-size=%2218%22>" + encodeURIComponent(name) + "</text></svg>";
+}
+
 function filteredProducts() {
   return products.filter((p) => {
     const matchCategory = activeCategory === "todos" || p.category === activeCategory;
@@ -52,7 +60,7 @@ function renderProducts() {
       (p) => `
       <article class="product-card" data-id="${p.id}">
         <div class="product-img-wrapper">
-          <img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect width=%22400%22 height=%22300%22 fill=%22%23f0f0f0%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2218%22>${encodeURIComponent(p.name)}</text></svg>';">
+          <img src="${p.image}" alt="${p.name}" loading="lazy">
         </div>
         <div class="product-info">
           <h3 class="product-name">${p.name}</h3>
@@ -66,6 +74,13 @@ function renderProducts() {
 }
 
 /* ── Event delegation ───────────────────────────────────────────── */
+// Image error fallback (delegated)
+productGrid.addEventListener("error", (e) => {
+  if (e.target.tagName === "IMG") {
+    e.target.src = fallbackSrc(e.target.alt);
+  }
+}, true);
+
 // Category filter clicks (delegated)
 filterContainer.addEventListener("click", (e) => {
   const btn = e.target.closest(".filter-btn");
