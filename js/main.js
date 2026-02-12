@@ -1,7 +1,7 @@
 /**
  * Main application logic — rendering, search, filtering, event delegation
  */
-import { products, categories } from "./database.js";
+import { products, categories, infoItems } from "./database.js";
 
 /* ── DOM references ─────────────────────────────────────────────── */
 const productGrid     = document.getElementById("product-grid");
@@ -11,6 +11,7 @@ const heroBtn         = document.getElementById("hero-cta");
 const navToggle       = document.getElementById("nav-toggle");
 const navMenu         = document.getElementById("nav-menu");
 const yearEl          = document.getElementById("current-year");
+const infoGrid        = document.getElementById("info-grid");
 const productModal    = document.getElementById("product-modal");
 const modalClose      = productModal.querySelector(".product-modal-close");
 const modalOverlay    = productModal.querySelector(".product-modal-overlay");
@@ -76,6 +77,23 @@ function renderProducts() {
           <p class="product-price">$${p.price.toFixed(2)}</p>
           <p class="product-desc">${p.description}</p>
           <button class="btn btn-outline btn-view-detail" data-id="${p.id}">Ver detalles</button>
+        </div>
+      </article>`
+    )
+    .join("");
+}
+
+function renderInfo() {
+  infoGrid.innerHTML = infoItems
+    .map(
+      (item) => `
+      <article class="info-card">
+        <div class="info-img-wrapper">
+          <img src="${item.image}" alt="${item.title}" loading="lazy">
+        </div>
+        <div class="info-card-body">
+          <h3 class="info-card-title">${item.title}</h3>
+          <p class="info-card-desc">${item.description}</p>
         </div>
       </article>`
     )
@@ -211,3 +229,4 @@ window.addEventListener("scroll", () => {
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 renderFilters();
 renderProducts();
+renderInfo();
