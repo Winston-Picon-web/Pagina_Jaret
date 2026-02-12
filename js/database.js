@@ -7,7 +7,7 @@ export const products = [
   {
     id: 1,
     name: "Mielitas VIP — Máxima Potencia",
-    price: 150.00,
+    price: 500.00,
     category: "mielitas",
     description: "Diseñadas para quienes buscan un efecto mucho más fuerte e intenso. Fórmula exclusiva con ingredientes naturales de alta potencia. Eleva el deseo, la energía y la resistencia al máximo nivel. 🔥 Presentación de 20g por sobre.",
     image: "recursos para la pagina/producto1.jpg"
@@ -15,7 +15,7 @@ export const products = [
   {
     id: 2,
     name: "Pink Pussy Cat — Miel Afrodisíaca Femenina",
-    price: 180.00,
+    price: 475.00,
     category: "para-ella",
     description: "Miel afrodisíaca especialmente formulada para mujeres. Estimula el deseo y la pasión femenina, aumenta la energía y vitalidad, intensifica la sensibilidad y el placer. Ingredientes naturales y de acción rápida. 💗✨",
     image: "recursos para la pagina/producto2.png"
@@ -23,7 +23,7 @@ export const products = [
   {
     id: 3,
     name: "Mielitas VIP — Energía Natural",
-    price: 150.00,
+    price: 500.00,
     category: "mielitas",
     description: "No dejes que el estrés apague tu fuego. Efecto más fuerte, intenso y prolongado. Aumenta la energía y el rendimiento. Estimula el deseo de manera inmediata. 100% natural.",
     image: "recursos para la pagina/publicidad_producto1.jpg"
@@ -31,7 +31,7 @@ export const products = [
   {
     id: 4,
     name: "Pink Pussy Cat — Sensualidad Natural",
-    price: 180.00,
+    price: 475.00,
     category: "para-ella",
     description: "Despierta tu lado más atrevido y sensual. Aumenta la energía y vitalidad, intensifica la sensibilidad y el placer. Elaborada con ingredientes naturales. ¡Atrévete a probarla! 🌸",
     image: "recursos para la pagina/publicidad_producto2.jpg"
@@ -39,7 +39,7 @@ export const products = [
   {
     id: 5,
     name: "Mielitas VIP — Colección Completa",
-    price: 350.00,
+    price: 975.00,
     category: "paquetes",
     description: "Conoce nuestras mielitas: VIP y Pink Pussy Cat. Sin efectos secundarios, sabor dulce, 100% efectivo y natural. Paquete ideal para parejas.",
     image: "recursos para la pagina/publicidad_producto_2.jpg"
