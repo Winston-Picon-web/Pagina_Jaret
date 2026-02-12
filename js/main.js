@@ -121,7 +121,7 @@ function openProductModal(productId) {
 
   const emailSubject = encodeURIComponent("Consulta sobre: " + product.name);
   const emailBody = encodeURIComponent("Hola, me interesa el producto: " + product.name + " ($" + product.price.toFixed(2) + "). ¿Podrían darme más información?");
-  modalEmail.href = "mailto:jaretgarcia@gmail.com?subject=" + emailSubject + "&body=" + emailBody;
+  modalEmail.href = "mailto:jaretgarciayt@gmail.com?subject=" + emailSubject + "&body=" + emailBody;
 
   productModal.classList.add("active");
   productModal.setAttribute("aria-hidden", "false");
