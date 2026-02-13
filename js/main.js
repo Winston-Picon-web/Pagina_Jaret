@@ -29,7 +29,7 @@ let searchQuery    = "";
 /* ── Helpers ────────────────────────────────────────────────────── */
 const normalise = (str) => str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
-// Formatter para mostrar GTQ (quetzales)
+// Formatter para mostrar GTQ (quetzales) cuando el precio es numérico
 const priceFormatter = new Intl.NumberFormat('es-GT', {
   style: 'currency',
   currency: 'GTQ',
@@ -51,9 +51,16 @@ function filteredProducts() {
     const matchSearch = !q
       || normalise(p.name).includes(q)
       || normalise(p.description).includes(q)
-      || normalise(p.category).includes(q);
+      || normalise((p.category || "").toString()).includes(q);
     return matchCategory && matchSearch;
   });
+}
+
+/* Helper para obtener la representación a mostrar del precio */
+function formatPriceForDisplay(price) {
+  if (typeof price === 'number') return priceFormatter.format(price);
+  if (typeof price === 'string') return price; // ya incluye formatos/prefijos (Q, etc.)
+  return "";
 }
 
 /* ── Render functions ───────────────────────────────────────────── */
@@ -81,7 +88,7 @@ function renderProducts() {
         </div>
         <div class="product-info">
           <h3 class="product-name">${p.name}</h3>
-          <p class="product-price">${priceFormatter.format(p.price)}</p>
+          <p class="product-price">${formatPriceForDisplay(p.price)}</p>
           <p class="product-desc">${p.description}</p>
           <button class="btn btn-outline btn-view-detail" data-id="${p.id}">Ver detalles</button>
         </div>
@@ -123,7 +130,7 @@ Descubre el secreto natural para despertar tu lado más atrevido y sensual. Pink
 🌸 <strong>Beneficios principales:</strong><br>
 • Estimula el deseo y la pasión femenina.<br>
 • Aumenta la energía y vitalidad.<br>
-��� Intensifica la sensibilidad y el placer.<br>
+• Intensifica la sensibilidad y el placer.<br>
 • Elaborada con ingredientes naturales y de acción rápida.<br><br>
 Ideal para mujeres que desean vivir experiencias más intensas y conectar con su sensualidad de manera natural y deliciosa.<br><br>
 🍯 Presentación práctica y lista para disfrutar.<br>
@@ -138,14 +145,14 @@ function openProductModal(productId) {
   modalImg.src = product.image;
   modalImg.alt = product.name;
   modalName.textContent = product.name;
-  modalPrice.textContent = priceFormatter.format(product.price);
+  modalPrice.textContent = formatPriceForDisplay(product.price);
   modalDesc.innerHTML = productDetails[productId] || product.description;
 
-  const whatsappMsg = encodeURIComponent("Hola, me interesa: " + product.name + " (" + priceFormatter.format(product.price) + ")");
+  const whatsappMsg = encodeURIComponent("Hola, me interesa: " + product.name + " (" + formatPriceForDisplay(product.price) + ")");
   modalWhatsapp.href = "https://wa.me/50247126194?text=" + whatsappMsg;
 
   const emailSubject = encodeURIComponent("Consulta sobre: " + product.name);
-  const emailBody = encodeURIComponent("Hola, me interesa el producto: " + product.name + " (" + priceFormatter.format(product.price) + "). ¿Podrían darme más información?");
+  const emailBody = encodeURIComponent("Hola, me interesa el producto: " + product.name + " (" + formatPriceForDisplay(product.price) + "). ¿Podrían darme más información?");
   modalEmail.href = "mailto:jaretgarciayt@gmail.com?subject=" + emailSubject + "&body=" + emailBody;
 
   productModal.classList.add("active");
