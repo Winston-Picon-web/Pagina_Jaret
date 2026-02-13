@@ -83,6 +83,6 @@ export const infoItems = [
     id: 5,
     title: "Tipos de Producto",
     description: "Ofrecemos presentaciones en caja completa, media caja, paquetes de 3 sobres y unidades sueltas para que elijas según tu necesidad y presupuesto.",
-    image: "recursos para la pagina/publicidad_tipos_de_producto.jpg"
+    image: "recursos para la pagina/publicidad_tipo_de_producto.jpg"
   }
 ];
