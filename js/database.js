@@ -8,7 +8,7 @@ export const products = [
     id: 1,
     name: "Mielitas VIP — Máxima Potencia",
     // precio con varias presentaciones en texto
-    price: "Q500.00 caja, media caja Q400, 3 sobres Q340, Unidad Q65",
+    price: "Q500.00 caja, media caja Q400, 3 sobres Q240, Unidad Q65",
     category: "mielitas",
     description: "Diseñadas para quienes buscan un efecto mucho más fuerte e intenso. Fórmula exclusiva con ingredientes naturales de alta potencia. Eleva el deseo, la energía y la resistencia al máximo nivel. 🔥 Presentación de 20g por sobre.",
     image: "recursos para la pagina/producto1.jpg"
@@ -24,7 +24,7 @@ export const products = [
   {
     id: 3,
     name: "Mielitas VIP — Energía Natural",
-    price: "Q470.00 caja, media caja Q370, 3 sobres Q330, Unidad Q60",
+    price: "Q470.00 caja, media caja Q370, 3 sobres Q230, Unidad Q60",
     category: "mielitas",
     description: "No dejes que el estrés apague tu fuego. Efecto más fuerte, intenso y prolongado. Aumenta la energía y el rendimiento. Estimula el deseo de manera inmediata. 100% natural.",
     image: "recursos para la pagina/publicidad_producto1.jpg"
@@ -32,7 +32,7 @@ export const products = [
   {
     id: 4,
     name: "Pink Pussy Cat — Sensualidad Natural",
-    price: "Q470.00 caja, media caja Q370, 3 sobres Q330, Unidad Q60",
+    price: "Q470.00 caja, media caja Q370, 3 sobres Q230, Unidad Q60",
     category: "para-ella",
     description: "Despierta tu lado más atrevido y sensual. Aumenta la energía y vitalidad, intensifica la sensibilidad y el placer. Elaborada con ingredientes naturales. ¡Atrévete a probarla! 🌸",
     image: "recursos para la pagina/publicidad_producto2.jpg"
