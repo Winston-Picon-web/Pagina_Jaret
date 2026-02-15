@@ -47,7 +47,7 @@ Sitio web estático que muestra un catálogo de productos (Mielitas VIP y Pink P
 - Abre un issue o un PR con tus cambios. Para cambios rápidos (texto, imágenes, estilos) modifica los archivos locales y crea un PR con un branch claro.
 
 ## Licencia
-- Añade tu licencia aquí si corresponde (por ejemplo MIT). Actualmente no se especifica licencia en el repo.
+- Licencia codigo abierto.
 
 ## Contacto
 - Para dudas o soporte abre un issue en este repositorio o contacta al mantenedor.
